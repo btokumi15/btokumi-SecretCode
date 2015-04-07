@@ -1,11 +1,20 @@
 import java.util.Scanner;
 
-public class PhraseEncoder
+public class PhraseScrambler
 {
     public static void main(String[] args){
       
       Scanner input = new Scanner(System.in);
       
-      String phrase = in.nextLine();
+      System.out.println("Enter the phrase you want to encode.");
+      
+      String phrase = input.nextLine();
+      
+      SecretCode message = new SecretCode();
+      String encodedPhrase = message.scramble(phrase);
+      System.out.println(encodedPhrase);
+    }
+}
+
       
       

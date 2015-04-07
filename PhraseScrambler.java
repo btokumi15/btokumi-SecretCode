@@ -10,11 +10,8 @@ public class PhraseScrambler
       
       String phrase = input.nextLine();
       
-      SecretCode code = new SecretCode();
-      String encodedPhrase = code.scramble(phrase);
-      System.out.println(encodedPhrase);
+      SecretCode message = new SecretCode();
+      String encodedPhrase = message.scramble(phrase);
+      System.out.println("The new phrase is:" + encodedPhrase);
     }
 }
-
-      
-      
