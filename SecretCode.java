@@ -21,7 +21,7 @@ public class SecretCode
   public String scramble(String phrase)
   {
     String newphrase = "";
-    int shift = (int)((Math.random()*27)+1);
+    int shift = (int)((Math.random()*6)+1);
     //int shift = 12; // this is a temporary shift because im trying to get it to at least work with a designated shift before I try to make another method...
     // to use scanner to input the shift
     System.out.println("The phrase has been shifted by the value of " + shift + ".");
@@ -53,7 +53,8 @@ public class SecretCode
       int foundIndex = findIndex(phrase.substring(p,p+1));
       int subletter = foundIndex - shift;
       int subletterindex = subletter;
-      if (subletter < 27)
+      if (subletter < 0)
+        //christian helped me because i had 27 here instead of 0 meaning that it added an index of 27 regardless of what number it was, giving me an error every time
       {
         subletterindex = subletter + 27;
       }

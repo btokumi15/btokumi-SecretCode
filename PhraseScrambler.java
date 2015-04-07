@@ -12,6 +12,6 @@ public class PhraseScrambler
       
       SecretCode message = new SecretCode();
       String encodedPhrase = message.scramble(phrase);
-      System.out.println("The new phrase is:" + encodedPhrase);
+      System.out.println("The new phrase is:" + encodedPhrase + ".");
     }
 }
