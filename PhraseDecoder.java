@@ -16,7 +16,7 @@ public class PhraseDecoder
       String phrase = input.nextLine();
       
       SecretCode code = new SecretCode();
-      String decodedPhrase = code.unscramble(phrase);
+      String decodedPhrase = code.unscramble( shift , phrase );
       System.out.println(decodedPhrase);
     }
 }
