@@ -6,17 +6,17 @@ public class PhraseDecoder
       
       Scanner input = new Scanner(System.in);
       
-      System.out.println("Enter the shift of the phrase.");
+      //System.out.println("Enter the shift of the phrase.");
       
-      String shiftparse = input.nextLine();
-      int shift = Integer.parseInt(shiftparse);
+      //String shiftparse = input.nextLine();
+      //int shift = Integer.parseInt(shiftparse);
       
       System.out.println("Enter the phrase you want to decode.");
       
       String phrase = input.nextLine();
       
       SecretCode code = new SecretCode();
-      String decodedPhrase = code.unscramble( shift , phrase );
+      String decodedPhrase = code.unscramble(phrase );
       System.out.println(decodedPhrase);
     }
 }
